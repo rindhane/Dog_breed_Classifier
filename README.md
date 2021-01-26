@@ -4,16 +4,26 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
+# Capstone Project : Breed Detection application
+
+
+> **Introduction** : This project harness the power of the convulutional neural network techniques to create classifier, which identifies the breed of the dog present in the picture.
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+  The problem task that this project solves is Ggiven an image of a dog, algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed. The sample output will look like as follows : 
 
 ![Sample Output][image1]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+## Explanation of the project
+- The detailed explanation of the entire project has been presented on my blog and the article can be checked out [here](https://rindhane.github.io/entries/Entry9.html).
 
-## Project Instructions
+
+## Detailed Working of the project 
+- To find all details related to the working of the code, checkout the jupyter-notebook [here]().
+
+
+## Getting Started Guide
 
 ### Instructions
 
@@ -100,17 +110,16 @@ jupyter notebook dog_app.ipynb
 
 12. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
 
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-## Evaluation
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rindhane/DataMusings/blob/master/LICENSE.md) file for details
 
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
+### Credits :  
+* [**Udacity**](Udacity) for guiding about Data Science.   
 
-## Project Submission
 
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
+------------------------------------
+***End***
 
-Alternatively, your submission could consist of the GitHub link to your repository.
+
+

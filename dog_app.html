@@ -14926,6 +14926,13 @@ No. of times dog detected out of 100 in dog_files_short =  100
 <p><strong>Question 4:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  If you chose to use the hinted architecture above, describe why you think that CNN architecture should work well for the image classification task.</p>
 <p><strong>Answer:</strong></p>
 
+<pre><code>The hinted architecture was implemented because of the following reasons:
+A. It has all the sub-components of cnn to learn the patterns from the images. It is also light enough in parameters which will avoid taking large time to learn the features. 
+B. The components used in the architecture : 
+        1. 3 Convoultional layer with each having filters quantity like 16, 32 &amp; 64 respectively  to learn high level features from the data.
+        2. 3 Pooling layers each of kernel size of (2x2) to reduce spatial complexity and consolidate weights from the previous layers.
+        3. Minimal layer of 133 perceptrons for fully connected layer to assign the probability to each required category from the given data. </code></pre>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15579,7 +15586,21 @@ test_{network} = bottleneck_features['test']</code></pre>
 </code></pre>
 <p><strong>Question 5:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  Describe why you think the architecture is suitable for the current problem.</p>
 <p><strong>Answer:</strong></p>
-<p><strong>write answer here</strong></p>
+
+<pre><code>To obtain the final architecture, a cnn model is created by using transfer technique. Following steps are carried out to obtain it: 
+</code></pre>
+<ol>
+<li>Pre-trained InceptionV3 CNN model in keras is used as convolution network for feature extraction.</li>
+<li>The high level features or bottleneck features are obtained by passing through InceptionV3.</li>
+<li>This bottlenect features' weights are coupled with fully connected layer of 133 perceptrons to categorize any given data to required 133 breeds. </li>
+<li><p>This coupled model is trained on the training data to recognize the 133 breeds by using high-level features derived from the InceptionV3 CNN .</p>
+<p>This architecture is chosen because of the following reasons:</p>
+<ol>
+<li>The InceptionV3 has shown good promisiong results on the Imagenet data.</li>
+<li>The training of this model hardly takes 10s or less to reach accuracy of around 78% on test data. </li>
+</ol>
+</li>
+</ol>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16079,6 +16100,14 @@ Epoch 00020: val_loss did not improve from 0.63455
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
 <p><strong>Answer:</strong></p>
+
+<pre><code>The output is working as expected. 
+Following steps can be taken to improve the complete application: 
+1. Increasing the depth of the fully connected layer, to enhance the accuracy of breed detection.
+2. Using Data Augmentation to increase the detection precision even for bad quality pictures.
+3. Improving the detection algorithm to handle the case of picture having person and dog in it .
+4. Providing more data related to each breed to increase the accuracy towards special cases of the breeds. 
+5. If memory and computation permits, using 3 or more models to pass the given the image and use the consensus predicted results to increase the accuracy further. This will help to remove the inherent accuracy among each of the model.</code></pre>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
