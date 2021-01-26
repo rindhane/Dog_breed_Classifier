@@ -20,7 +20,7 @@
 
 
 ## Detailed Working of the project 
-- To find all details related to the working of the code, checkout the jupyter-notebook [here]().
+- To find all details related to the working of the code, checkout the jupyter-notebook [here](https://github.com/rindhane/Img_Classifier/blob/main/dog_app.ipynb).
 
 
 ## Getting Started Guide
@@ -112,10 +112,10 @@ jupyter notebook dog_app.ipynb
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rindhane/DataMusings/blob/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rindhane/Img_Classifier/blob/main/LICENSE.txt) file for details
 
 ### Credits :  
-* [**Udacity**](Udacity) for guiding about Data Science.   
+* [**Udacity**](https://Udacity.com) for guiding about Data Science.   
 
 
 ------------------------------------
